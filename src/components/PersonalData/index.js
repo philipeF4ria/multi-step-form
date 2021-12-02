@@ -1,11 +1,20 @@
+import { 
+  Container, 
+  Input, 
+  ButtonsArea, 
+  Button,
+} from '../../styles/forms';
+
 export function PersonalData({ nextStep }) {
   return (
-    <div>
-      <h1>Dados Pessoais</h1>
-      <input type="text" placeholder="Seu nome completo"/>
-      <input type="text" placeholder="Seu CPF"/>
-      <input type="text" placeholder="Seu endereço"/>
-      <button onClick={nextStep}>Próximo</button>
-    </div>
+    <Container>
+      <Input type="text" placeholder="Seu nome completo"/>
+      <Input type="text" placeholder="Seu CPF"/>
+      <Input type="text" placeholder="Seu telefone"/>
+      <Input type="text" placeholder="Seu endereço"/>
+      <ButtonsArea>
+        <Button onClick={nextStep} style={{ marginLeft: 'auto' }}>Próximo</Button>
+      </ButtonsArea>
+    </Container>
   );
 }

@@ -1,12 +1,27 @@
-export function Payment({ nextStep }) {
+import { 
+  Container, 
+  Input, 
+  ButtonsArea, 
+  Button,
+} from '../../styles/forms';
+
+
+export function Payment({ comeBack }) {
   return (
-    <div>
-      <h1>Pagamento</h1>
-      <input type="text" placeholder="Número do cartão"/>
-      <input type="text" placeholder="Nome impresso no cartão"/>
-      <input type="text" placeholder="CVV"/>
-      <input type="text" placeholder="Vencimento"/>
-      <button onClick={nextStep} >Próximo</button>
-    </div>
+    <Container>
+      <Input type="text" placeholder="Número do cartão"/>
+      <Input type="text" placeholder="Nome impresso no cartão"/>
+      <Input type="text" placeholder="CVV"/>
+      <Input type="text" placeholder="Vencimento"/>
+      <ButtonsArea>
+        <Button 
+          onClick={comeBack}
+          backgroundColor="transparent"
+          fontColor="#666"
+        >
+          Voltar
+        </Button>
+      </ButtonsArea>
+    </Container>
   );
 }

@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  background: #FAF6F8;
+  background: #FFF;
   height: 100vh;
 `;
 
@@ -18,7 +18,9 @@ export const Header = styled.header`
   color: #FAFAFA;
 `;
 
-export const FormContainer = styled.main`
+export const FormArea = styled.main`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 46px;
 `;

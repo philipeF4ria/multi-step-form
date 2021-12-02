@@ -1,12 +1,27 @@
-export function VehicleData({ nextStep }) {
+import { 
+  Container,
+  Input,
+  ButtonsArea,
+  Button,
+} from '../../styles/forms';
+
+export function VehicleData({ nextStep, comeBack }) {
   return (
-    <div>
-      <h1>Dados do Veículo</h1>
-      <input type="text" placeholder="Marca"/>
-      <input type="text" placeholder="Modelo e ano"/>
-      <input type="text" placeholder="Cor"/>
-      <input type="text" placeholder="Placa"/>
-      <button onClick={nextStep}>Próximo</button>
-    </div>
+    <Container>
+      <Input type="text" placeholder="Marca"/>
+      <Input type="text" placeholder="Modelo e ano"/>
+      <Input type="text" placeholder="Cor"/>
+      <Input type="text" placeholder="Placa"/>
+      <ButtonsArea>
+        <Button 
+          onClick={comeBack}
+          backgroundColor="transparent"
+          fontColor="#666"
+        >
+          Voltar
+        </Button>
+        <Button onClick={nextStep}>Próximo</Button>
+      </ButtonsArea>
+    </Container>
   );
 }

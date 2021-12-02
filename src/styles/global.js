@@ -9,5 +9,9 @@ export const GlobalStyle = createGlobalStyle`
 
   body, input, button {
     font-family: Arial, Helvetica, sans-serif;
-  } 
+  }
+  
+  button {
+    cursor: pointer;
+  }
 `;
